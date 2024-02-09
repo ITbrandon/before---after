@@ -6,10 +6,13 @@ let initialNumber = 5.125456;
 
 beforeNumberVariable.textContent = initialNumber
 
+// Incrementing Number By 1
 initialNumber++;
 
+// Setting Number to Only two decimals
 let fixedNumber = initialNumber.toFixed(2);
 
+// Turning Number into a String
 fixedNumber.toString();
 
 numberVariable.textContent = fixedNumber;
@@ -22,8 +25,10 @@ let initialString = 'Hello, World';
 
 beforeStringVariable.textContent = initialString;
 
+// Replacing Initial String Value to Another Value
 let newString = initialString.replace('World', 'People');
 
+// taking off the string values from position 0-6 
 const finalString = newString.slice(7);
 
 stringVariable.textContent = finalString;
@@ -36,8 +41,10 @@ const initialArray = [1, 2, 3, 4, 5];
 
 beforeArrayVariable.textContent = initialArray;
 
+// Pushing the Number 6 into the Array
 initialArray.push(6);
 
+// Removing the value at position 0 of the array
 initialArray.shift();
 
 arrayVariable.textContent = initialArray;
@@ -50,10 +57,13 @@ let initialObject = { name: "Brandon", age: 21 };
 
 beforeObjectVariable.textContent = Object.values(initialObject);
 
+//Changing a the value for the name key
 initialObject.name = "Boston";
 
+//adding a new key value pair
 initialObject.favoriteFood = "Pizza";
 
+//removing a key value pair
 delete initialObject.age;
 
 objectVariable.textContent = Object.values(initialObject);
